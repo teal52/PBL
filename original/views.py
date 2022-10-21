@@ -18,10 +18,14 @@ def index(request):
 
     now = datetime.datetime.now()
 
+    hour = f'{now.hour:02}'
+    minute = f'{now.minute:02}'
+    second = f'{now.second:02}'
+
     now_text={
-        "hour":now.hour,
-        "minute":now.minute,
-        "second":now.second,
+        "hour":hour,
+        "minute":minute,
+        "second":second,
     }
 
 

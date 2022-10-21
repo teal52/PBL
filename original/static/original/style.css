@@ -1,5 +1,14 @@
-h1 {
+h1,p {
     color: teal;
     text-align: center;
+    font-family: "Nico Moji";
     
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    font-size: xx-large;
 }
