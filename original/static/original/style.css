@@ -1,14 +1,16 @@
-h1,p {
+h1,h2,p {
     color: teal;
     text-align: center;
     font-family: "Nico Moji";
-    
 }
 
-body{
-    background-color: black;
+
+header,body,html{
+    background-color: white; 
 }
+
 
 .main{
     font-size: xx-large;
 }
+

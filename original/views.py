@@ -29,4 +29,4 @@ def index(request):
     }
 
 
-    return render(request,'original/index.html',now_text)
+    return render(request,'original/base.html',now_text)
