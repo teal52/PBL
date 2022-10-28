@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from pipes import Template
 from re import template
 from tkinter import font
+from urllib import request
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -16,6 +17,11 @@ def index(request):
     
     return render(request,'original/base.html')
 
+def entry():
+    return render(request,'original/base.html')
+
+
+'''
 def get_timer():
     now = datetime.datetime.now()
 
@@ -29,3 +35,4 @@ def get_timer():
         "second":second,
     }
     return render(request,'original/base.html')
+'''

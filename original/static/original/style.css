@@ -1,16 +1,32 @@
-h1,h2,p {
+h1,h2,p,li {
     color: teal;
     text-align: center;
     font-family: "Nico Moji";
 }
 
 
-header,body,html{
-    background-color: white; 
+html{
+    animation: bgchange 15s ease infinite; 
 }
 
-
-.main{
-    font-size: xx-large;
+.timer{
+    font-size: 750%;
 }
 
+.header_list{
+    margin: 0;
+    text-align: center;
+}
+
+.header_item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 150%;
+}
+
+@keyframes bgchange {
+    0%   {background: black;}
+    50%  {background: white;}
+    100% {background: black;}
+}
