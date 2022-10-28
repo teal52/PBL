@@ -8,14 +8,15 @@ from django.http import HttpResponse
 import datetime
 import sys
 
+
+
 # Create your views here.
 
 def index(request):
+    
+    return render(request,'original/base.html')
 
-    key_text={
-        "name_text": "4E",
-    }
-
+def get_timer():
     now = datetime.datetime.now()
 
     hour = f'{now.hour:02}'
@@ -27,6 +28,4 @@ def index(request):
         "minute":minute,
         "second":second,
     }
-
-
-    return render(request,'original/base.html',now_text)
+    return render(request,'original/base.html')
