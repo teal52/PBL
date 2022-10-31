@@ -6,7 +6,7 @@ h1,h2,p,li {
 
 
 html{
-    animation: bgchange 15s ease infinite; 
+    background-color: white;
 }
 
 .timer{
@@ -25,8 +25,3 @@ html{
     font-size: 150%;
 }
 
-@keyframes bgchange {
-    0%   {background: white;}
-    50%  {background: black;}
-    100% {background: white;}
-}
