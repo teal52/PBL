@@ -1,4 +1,4 @@
-h1,h2,p,li {
+h1,h2,li {
     color: teal;
     text-align: center;
     font-family: "Nico Moji";
@@ -9,8 +9,16 @@ html{
     background-color: white;
 }
 
+P {
+    color: teal;
+    text-align: center;
+}
+
 .timer{
+    color: teal;
+    text-align: center;
     font-size: 750%;
+    font-family: "Nico Moji";
 }
 
 .header_list{

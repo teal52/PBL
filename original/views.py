@@ -10,14 +10,15 @@ from django.http import HttpResponse
 import datetime
 import sys
 
-from . import timer
+from . import weather
 
 
 # Create your views here.
 
 def index(request):
-    print(timer.get_timer())
-    return render(request,'original/base.html')
+    weather_data = weather.get_json()
+
+    return render(request,'original/base.html',weather_data)
 
 def entry():
     return render(request,'original/base.html')
