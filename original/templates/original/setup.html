@@ -8,26 +8,20 @@
         <title>Behind</title>
         <link rel="stylesheet" href="{% static 'original/style.css' %}">
         <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
-        <script type="text/javascript" src="{% static 'original/style.js' %}"></script>
+        <!-- <script type="text/javascript" src="{% static 'original/style.js' %}"></script> -->
         
     </head>
     <header>
         <h1>UshIRO</h1>
         <ul class="header_list">
-            <li class="header_item">
-                <a href="{% url 'index' %}">Home</a>
-            </li>
+            <li class="header_item"><a href="{% url 'index'%}">Home</a></li>
             <li class="header_item"><a href="{% url 'entry'%}">Entry</a></li>
             <li class="header_item">Stop</li>
         </ul>
     </header>
 
     <body>
-        <!-- <p class="main">{{hour}}:{{minute}}:{{second}}</p> -->
-        <p id="RealtimeClockArea2" class="timer">Now loading ...</p>
-        <p>You don't set "Get Up Time".</p>
-        <p>{{ date }}</p>
-        <p>{{  weather }}</p>
+        <p class="timer">Please set time!</p>
     </body>
 
 </html>

@@ -20,6 +20,6 @@ def index(request):
 
     return render(request,'original/base.html',weather_data)
 
-def entry():
-    return render(request,'original/base.html')
+def entry(request):
+    return render(request,'original/setup.html')
 
