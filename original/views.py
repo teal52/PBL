@@ -21,5 +21,12 @@ def index(request):
     return render(request,'original/base.html',weather_data)
 
 def entry(request):
+    
     return render(request,'original/setup.html')
+
+
+'''
+def stop(request):
+    return
+'''
 

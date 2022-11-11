@@ -9,9 +9,13 @@ html{
     background-color: white;
 }
 
-P {
+a,p {
     color: teal;
     text-align: center;
+}
+
+a:visited{
+    color: teal;
 }
 
 .timer{
