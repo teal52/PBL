@@ -11,6 +11,12 @@ weather_date = weather_data[0]["timeSeries"][0]["timeDefines"][0]
 weather_weather = weather_data[0]["timeSeries"][0]["areas"][0]["weathers"][0]
 '''
 
+proxies = {
+    'http':'http://po.cc.ibaraki-ct.ac.jp:3128',
+    'https':'http://po.cc.ibaraki-ct.ac.jp:3128'
+}
+
+
 def get_json():
     weather_data = requests.get(url).json()
 
