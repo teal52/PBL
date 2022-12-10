@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Behind</title>
+        <link rel="stylesheet" href="{% static 'original/style.css' %}">
+        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+        <script type="text/javascript" src="{% static 'original/style.js' %}"></script>
+        
+    </head>
+    <header>
+        <h1>UshIRO</h1>
+        <ul class="header_list">
+            <li class="header_item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="header_item"><a href="{% url 'entry'%}">Entry</a></li>
+            <li class="header_item">Stop</li>
+        </ul>
+    </header>
+
+    <body>
+        
+    </body>
+
+</html>

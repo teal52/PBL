@@ -25,8 +25,7 @@ def entry(request):
     return render(request,'original/setup.html')
 
 
-'''
-def stop(request):
-    return
-'''
+def gpio(request):
+    return render(request, 'original/gpio.html')
+
 
