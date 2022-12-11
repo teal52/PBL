@@ -11,6 +11,7 @@ import datetime
 import sys
 
 from . import weather
+from . import gpio
 
 
 # Create your views here.
