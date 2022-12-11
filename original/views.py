@@ -11,6 +11,7 @@ import datetime
 import sys
 
 from . import weather
+from . import gpio
 
 
 # Create your views here.
@@ -25,8 +26,15 @@ def entry(request):
     return render(request,'original/setup.html')
 
 
-'''
-def stop(request):
-    return
-'''
+def switch_on(request):
+    switch_state = True
+    print(switch_state)
+    gpio.switch(switch_state)
+    return render(request, 'original/gpio.html',{'state': 'on'})
+
+def switch_off(request):
+    switch_state = False
+    print(switch_state)
+    gpio.switch(switch_state)
+    return render(request, 'original/gpio.html',{'state': 'off'})
 
