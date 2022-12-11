@@ -26,13 +26,13 @@ def entry(request):
     return render(request,'original/setup.html')
 
 
-def on(request):
+def switch_on(request):
     switch_state = True
     print(switch_state)
     gpio.switch(switch_state)
     return render(request, 'original/gpio.html',{'state': 'on'})
 
-def off(request):
+def switch_off(request):
     switch_state = False
     print(switch_state)
     gpio.switch(switch_state)
