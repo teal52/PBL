@@ -25,7 +25,15 @@ def entry(request):
     return render(request,'original/setup.html')
 
 
-def gpio(request):
-    return render(request, 'original/gpio.html')
+def on(request):
+    switch_state = True
+    print(switch_state)
+    gpio.switch(switch_state)
+    return render(request, 'original/gpio.html',{'state': 'on'})
 
+def off(request):
+    switch_state = False
+    print(switch_state)
+    gpio.switch(switch_state)
+    return render(request, 'original/gpio.html',{'state': 'off'})
 
