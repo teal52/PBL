@@ -5,6 +5,6 @@ from . import views
 urlpatterns = [
     path('',views.index,name='index'),
     path('entry/',views.entry,name='entry'),
-    path('gpioon/',views.on,name='on'),
-    path('gpiooff/',views.off,name='off'),
+    path('on/',views.on,name='on'),
+    path('off/',views.off,name='off'),
 ]
